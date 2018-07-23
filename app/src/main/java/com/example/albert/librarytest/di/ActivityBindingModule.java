@@ -1,7 +1,9 @@
 package com.example.albert.librarytest.di;
 
 import com.example.albert.librarytest.arch.ArchActivity;
+import com.example.albert.librarytest.dagger.DaggerDateActivity;
 import com.example.albert.librarytest.di.module.ArchModule;
+import com.example.albert.librarytest.di.module.DaggerDateModule;
 import com.example.albert.librarytest.di.module.MainModule;
 import com.example.albert.librarytest.main.MainActivity;
 
@@ -16,4 +18,7 @@ public abstract class ActivityBindingModule {
 
     @ContributesAndroidInjector(modules = {ArchModule.class})
     abstract ArchActivity archActivity();
+
+    @ContributesAndroidInjector(modules = {DaggerDateModule.class})
+    abstract DaggerDateActivity daggerDateActivity();
 }

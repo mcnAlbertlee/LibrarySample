@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.arch.ArchActivity;
+import com.example.albert.librarytest.dagger.DaggerDateActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,18 +48,27 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.ViewHo
         holder.mView.setOnClickListener(v -> {
             switch (position) {
 
-                case 0:
+                case 0: {
                     Context context = v.getContext();
                     Intent intent = new Intent(v.getContext(), ArchActivity.class);
                     context.startActivity(intent);
+                }
                     break;
 
                 case 1:
-                    Toast.makeText(v.getContext(), "Clicked 2", Toast.LENGTH_SHORT).show();
+                    Context context = v.getContext();
+                    Intent intent = new Intent(v.getContext(), DaggerDateActivity.class);
+                    context.startActivity(intent);
+
                     break;
 
                 case 2:
                     Toast.makeText(v.getContext(), "Clicked 3", Toast.LENGTH_SHORT).show();
+                    break;
+
+                case 3: {
+                    Toast.makeText(v.getContext(), "Clicked 4", Toast.LENGTH_SHORT).show();
+                }
                     break;
 
             }

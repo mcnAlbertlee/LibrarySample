@@ -5,7 +5,7 @@
         <item>Arch Sample</item>
         <item>Dagger Sample</item>
         <item>RxJava Sample</item>
-        <item>Crashlytics Sample</item>
+        <item>DaggerDate Sample</item>
     </string-array>
 
 </resources>

@@ -22,6 +22,8 @@
         </activity>
 
         <activity android:name=".arch.ArchActivity" />
+        <activity android:name=".dagger.DaggerDateActivity" />
+
 
         <meta-data
             android:name="io.fabric.ApiKey"
