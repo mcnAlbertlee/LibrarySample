@@ -73,6 +73,15 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
     testAnnotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
     androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android-support:${daggerVersion}"
+
+    // if you use the support libraries
+    annotationProcessor "com.google.dagger:dagger-android-processor:${daggerVersion}"
+
+
+
+
 
     // if you use the support libraries
     implementation "com.google.dagger:dagger-android:${daggerVersion}"
@@ -87,4 +96,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //ui 테스트를 위해 추가
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.1'
+
+    testImplementation 'org.mockito:mockito-core:2.18.3'
+    androidTestImplementation 'org.mockito:mockito-android:2.18.3'
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:3.0.1"
 }

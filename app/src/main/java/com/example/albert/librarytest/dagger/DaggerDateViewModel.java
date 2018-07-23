@@ -16,7 +16,7 @@ public class DaggerDateViewModel extends ViewModel {
         this.dateExample = dateExample;
     }
 
-    public void getCurrentDate() {
+    public void loadCreateDate() {
         if(createDateText == null) {
             createDateText = new MutableLiveData<>();
         }
@@ -24,11 +24,19 @@ public class DaggerDateViewModel extends ViewModel {
         createDateText.setValue((new Date(dateExample.getCreateDate())).toString());
     }
 
-    public void getDate() {
+    public void loadDate() {
         if(dateText == null) {
             dateText = new MutableLiveData<>();
         }
 
         dateText.setValue((new Date(dateExample.getDate())).toString());
+    }
+
+    public MutableLiveData<String> getCreateDate() {
+        return createDateText;
+    }
+
+    public MutableLiveData<String> getDate() {
+        return dateText;
     }
 }

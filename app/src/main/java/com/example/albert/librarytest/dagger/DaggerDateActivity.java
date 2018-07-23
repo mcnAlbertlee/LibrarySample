@@ -12,7 +12,7 @@ import javax.inject.Inject;
 public class DaggerDateActivity extends BaseActivity {
 
     @Inject
-    DaggerDateViewModel viewModel;
+    public DaggerDateViewModel viewModel;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,10 +24,10 @@ public class DaggerDateActivity extends BaseActivity {
         TextView tvCreateDateText = findViewById(R.id.tvCreateDate);
         TextView tvDateText = findViewById(R.id.tvDate);
 
-        viewModel.getCurrentDate();
-        viewModel.getDate();
+        viewModel.loadCreateDate();
+        viewModel.loadDate();
 
-        viewModel.createDateText.observe(this, dateText -> tvCreateDateText.setText(dateText));
-        viewModel.dateText.observe(this, dateText -> tvDateText.setText(dateText));
+        viewModel.getCreateDate().observe(this, dateText -> tvCreateDateText.setText(dateText));
+        viewModel.getDate().observe(this, dateText -> tvDateText.setText(dateText));
     }
 }
