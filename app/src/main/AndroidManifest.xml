@@ -23,7 +23,7 @@
 
         <activity android:name=".arch.ArchActivity" />
         <activity android:name=".dagger.DaggerDateActivity" />
-
+        <activity android:name=".rx.RxActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

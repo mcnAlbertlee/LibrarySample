@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.arch.ArchActivity;
 import com.example.albert.librarytest.dagger.DaggerDateActivity;
+import com.example.albert.librarytest.rx.RxActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,15 +56,18 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.ViewHo
                 }
                     break;
 
-                case 1:
+                case 1: {
                     Context context = v.getContext();
                     Intent intent = new Intent(v.getContext(), DaggerDateActivity.class);
                     context.startActivity(intent);
-
+                }
                     break;
 
-                case 2:
-                    Toast.makeText(v.getContext(), "Clicked 3", Toast.LENGTH_SHORT).show();
+                case 2: {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(v.getContext(), RxActivity.class);
+                    context.startActivity(intent);
+                }
                     break;
 
                 case 3: {

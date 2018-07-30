@@ -22,7 +22,8 @@ import dagger.android.support.AndroidSupportInjectionModule;
         ActivityBindingModule.class,
         ApplicationModule.class,
         AndroidSupportInjectionModule.class,
-        CoreModule.class
+        CoreModule.class,
+        NetworkModule.class
 })
 public interface ApplicationComponent extends AndroidInjector<LibraryTestApplication> {
     @Component.Builder

@@ -5,7 +5,9 @@ import com.example.albert.librarytest.dagger.DaggerDateActivity;
 import com.example.albert.librarytest.di.module.ArchModule;
 import com.example.albert.librarytest.di.module.DaggerDateModule;
 import com.example.albert.librarytest.di.module.MainModule;
+import com.example.albert.librarytest.di.module.RxModule;
 import com.example.albert.librarytest.main.MainActivity;
+import com.example.albert.librarytest.rx.RxActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -21,4 +23,7 @@ public abstract class ActivityBindingModule {
 
     @ContributesAndroidInjector(modules = {DaggerDateModule.class})
     abstract DaggerDateActivity daggerDateActivity();
+
+    @ContributesAndroidInjector(modules = RxModule.class)
+    abstract RxActivity rxActivity();
 }
