@@ -21,6 +21,12 @@
 [Manifest에 포함되어 있는 메타 정보(facebook sdk id, fabric id 등) 숨기기](https://medium.com/@elye.project/keep-your-keys-outside-manifest-and-gradle-ba44110bafca)
 
 
+## RxJava
+### 참고 사이트
+[RxJava 시각화 다이어그램](http://rxmarbles.com/)
+
+[RxJava2 AndroidSamples](https://github.com/amitshekhariitbhu/RxJava2-Android-Samples)
+
 ## Architecture Component
 ### android.arch.lifecycle
 

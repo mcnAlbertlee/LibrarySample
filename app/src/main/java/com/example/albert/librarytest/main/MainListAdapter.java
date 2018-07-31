@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.arch.ArchActivity;
 import com.example.albert.librarytest.dagger.DaggerDateActivity;
-import com.example.albert.librarytest.rx.RxActivity;
+import com.example.albert.librarytest.rx.RxOperatorExampleActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +65,7 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.ViewHo
 
                 case 2: {
                     Context context = v.getContext();
-                    Intent intent = new Intent(v.getContext(), RxActivity.class);
+                    Intent intent = new Intent(v.getContext(), RxOperatorExampleActivity.class);
                     context.startActivity(intent);
                 }
                     break;

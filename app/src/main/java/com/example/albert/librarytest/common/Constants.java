@@ -1,7 +1,7 @@
 package com.example.albert.librarytest.common;
 
 public class Constants {
-    public final static String GithubApiURL = "https://api.github.com/";
+    public static final String BUILD_RELEASE = "release";
 
-
+    public static final String LINE_SEPARATOR = "\n";
 }

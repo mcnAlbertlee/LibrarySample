@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startRxActivity"
+            android:text="@string/bt_rx_api"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSimpleActivity"
+            android:text="@string/bt_rx_simple"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startMapActivity"
+            android:text="@string/bt_rx_map"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startZipActivity"
+            android:text="@string/bt_rx_zip"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDisposableActivity"
+            android:text="@string/bt_rx_disposable"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTakeActivity"
+            android:text="@string/bt_rx_take"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTimeActivity"
+            android:text="@string/bt_rx_time"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startIntervalActivity"
+            android:text="@string/bt_rx_interval"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSingleObserverActivity"
+            android:text="@string/bt_rx_single_observer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startCompletableObserverActivity"
+            android:text="@string/bt_rx_completable_observer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startFlowableActivity"
+            android:text="@string/bt_rx_flowable"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startReduceActivity"
+            android:text="@string/bt_rx_reduce"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startBufferActivity"
+            android:text="@string/bt_rx_buffer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startFilterActivity"
+            android:text="@string/bt_rx_filter"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSkipActivity"
+            android:text="@string/bt_rx_skip"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startScanActivity"
+            android:text="@string/bt_rx_scan"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startReplayActivity"
+            android:text="@string/bt_rx_replay"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startConcatActivity"
+            android:text="@string/bt_rx_concat"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startMergeActivity"
+            android:text="@string/bt_rx_merge"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDeferActivity"
+            android:text="@string/bt_rx_defer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDistinctActivity"
+            android:text="@string/bt_rx_distinct"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startLastOperatorActivity"
+            android:text="@string/bt_rx_last_operator"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startReplaySubjectActivity"
+            android:text="@string/bt_rx_replay_subject"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startPublishSubjectActivity"
+            android:text="@string/bt_rx_publish_subject"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startBehaviorSubjectActivity"
+            android:text="@string/bt_rx_behavior_subject"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAsyncSubjectActivity"
+            android:text="@string/bt_rx_async_subject"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startThrottleFirstActivity"
+            android:text="@string/bt_rx_throttle_first"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startThrottleLastActivity"
+            android:text="@string/bt_rx_throttle_last"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDebounceActivity"
+            android:text="@string/bt_rx_debounce"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startWindowActivity"
+            android:text="@string/bt_rx_window"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startDelayActivity"
+            android:text="@string/bt_rx_delay"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSwitchMapActivity"
+            android:text="@string/bt_rx_switch_map"/>
+
+
+    </LinearLayout>
+</ScrollView>
