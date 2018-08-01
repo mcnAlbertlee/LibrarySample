@@ -14,7 +14,7 @@
     <string name="bt_rx_zip">Zip</string>
     <string name="bt_rx_disposable">Disposable</string>
     <string name="bt_rx_take">Take</string>
-    <string name="bt_rx_time">Time</string>
+    <string name="bt_rx_timer">Timer</string>
     <string name="bt_rx_interval">Interval</string>
     <string name="bt_rx_single_observer">SingleObserver</string>
     <string name="bt_rx_completable_observer">CompletableObserver</string>

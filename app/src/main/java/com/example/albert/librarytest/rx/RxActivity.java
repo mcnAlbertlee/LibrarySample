@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.albert.librarytest.BaseActivity;
 import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.network.dto.UsersResponse;
+import com.squareup.picasso.Picasso;
 
 import javax.inject.Inject;
 
@@ -95,6 +96,7 @@ public class RxActivity extends BaseActivity {
             rvUserInfo.setVisibility(View.VISIBLE);
 
             ImageView ivAvatar = findViewById(R.id.ivAvatar);
+            Picasso.get().load(userInfo.avatar_url).into(ivAvatar);
 
             TextView tvName = findViewById(R.id.tvName);
             TextView tvCompany = findViewById(R.id.tvCompany);

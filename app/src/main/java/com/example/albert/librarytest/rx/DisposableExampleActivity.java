@@ -1,9 +1,12 @@
 package com.example.albert.librarytest.rx;
 
+import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 
+import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.common.Constants;
 
 import io.reactivex.Observable;
@@ -17,6 +20,13 @@ public class DisposableExampleActivity extends RxBaseActivity {
     private String TAG = this.getClass().getSimpleName();
 
     private final CompositeDisposable disposable = new CompositeDisposable();
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setScreenTitle(getResources().getString(R.string.bt_rx_disposable));
+    }
 
     @Override
     protected void onDestroy() {

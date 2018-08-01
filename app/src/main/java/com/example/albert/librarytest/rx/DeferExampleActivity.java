@@ -1,10 +1,15 @@
 package com.example.albert.librarytest.rx;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 
+import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.common.Constants;
+import com.example.albert.librarytest.rx.dao.Car;
 
+import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
@@ -12,10 +17,31 @@ public class DeferExampleActivity extends RxBaseActivity {
 
     private String TAG = this.getClass().getSimpleName();
 
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setScreenTitle(getResources().getString(R.string.bt_rx_defer));
+    }
+
     public void startRxExample(View view) {
         tvRxResult.setText("");
 
         onStartLoading();
+
+        Car car = new Car();
+        Observable<String> brandDeferObservable = car.brandDeferObservable();
+
+        // defer를 사용하지 않고 null인 객체를 호출하면 NullPointerException이 발생
+
+        car.setBrand("BMW");
+        /*
+        Even if we are setting the brand after creating Observable we will get the brand as BMW.
+        If we had not used defer, we would have got null as the brand.
+        */
+
+        brandDeferObservable
+                .subscribe(getObserver());
     }
 
     private Observer<String> getObserver() {

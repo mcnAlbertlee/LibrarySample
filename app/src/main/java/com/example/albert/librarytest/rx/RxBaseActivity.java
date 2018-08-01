@@ -30,4 +30,8 @@ public class RxBaseActivity extends AppCompatActivity {
     protected void onStopLoading() {
         pbLoading.setVisibility(View.GONE);
     }
+
+    protected void setScreenTitle(String title) {
+        setTitle(title);
+    }
 }

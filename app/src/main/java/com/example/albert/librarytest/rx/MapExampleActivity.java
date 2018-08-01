@@ -1,8 +1,11 @@
 package com.example.albert.librarytest.rx;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 
+import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.common.Constants;
 import com.example.albert.librarytest.common.Utils;
 import com.example.albert.librarytest.rx.dao.ApiUser;
@@ -22,6 +25,13 @@ import io.reactivex.schedulers.Schedulers;
 public class MapExampleActivity extends RxBaseActivity {
 
     private String TAG = this.getClass().getSimpleName();
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setScreenTitle(getResources().getString(R.string.bt_rx_map));
+    }
 
     public void startRxExample(View view) {
         tvRxResult.setText("");

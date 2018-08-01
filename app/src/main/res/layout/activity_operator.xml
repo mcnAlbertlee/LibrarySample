@@ -47,8 +47,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="startTimeActivity"
-            android:text="@string/bt_rx_time"/>
+            android:onClick="startTimerActivity"
+            android:text="@string/bt_rx_timer"/>
 
         <Button
             android:layout_width="match_parent"
