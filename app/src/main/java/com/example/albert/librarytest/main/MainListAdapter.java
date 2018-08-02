@@ -8,10 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.albert.librarytest.R;
 import com.example.albert.librarytest.arch.ArchActivity;
+import com.example.albert.librarytest.arch.room.RoomActivity;
 import com.example.albert.librarytest.dagger.DaggerDateActivity;
 import com.example.albert.librarytest.rx.RxOperatorExampleActivity;
 
@@ -71,7 +71,9 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.ViewHo
                     break;
 
                 case 3: {
-                    Toast.makeText(v.getContext(), "Clicked 4", Toast.LENGTH_SHORT).show();
+                    Context context = v.getContext();
+                    Intent intent = new Intent(v.getContext(), RoomActivity.class);
+                    context.startActivity(intent);
                 }
                     break;
 

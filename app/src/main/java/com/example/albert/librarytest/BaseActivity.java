@@ -3,6 +3,7 @@ package com.example.albert.librarytest;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import dagger.android.AndroidInjection;
 
@@ -16,5 +17,9 @@ public class BaseActivity extends AppCompatActivity {
 
     protected void setScreenTitle(String barTtile) {
         setTitle(barTtile);
+    }
+
+    public void showToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

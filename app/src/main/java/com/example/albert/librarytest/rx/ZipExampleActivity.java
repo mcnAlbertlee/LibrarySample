@@ -63,10 +63,10 @@ public class ZipExampleActivity extends RxBaseActivity {
         });
     }
 
-//    private Observable<List<User>> getCricketFansObservable() {
-//        return Observable.create(new ObservableOnSubscribe<List<User>>() {
+//    private Observable<List<UserEntity>> getCricketFansObservable() {
+//        return Observable.create(new ObservableOnSubscribe<List<UserEntity>>() {
 //            @Override
-//            public void subscribe(ObservableEmitter<List<User>> e) throws Exception {
+//            public void subscribe(ObservableEmitter<List<UserEntity>> e) throws Exception {
 //                if (!e.isDisposed()) {
 //                    e.onNext(Utils.getUserListWhoLovesCricket());
 //                    e.onComplete();
@@ -75,10 +75,10 @@ public class ZipExampleActivity extends RxBaseActivity {
 //        });
 //    }
 //
-//    private Observable<List<User>> getFootballFansObservable() {
-//        return Observable.create(new ObservableOnSubscribe<List<User>>() {
+//    private Observable<List<UserEntity>> getFootballFansObservable() {
+//        return Observable.create(new ObservableOnSubscribe<List<UserEntity>>() {
 //            @Override
-//            public void subscribe(ObservableEmitter<List<User>> e) throws Exception {
+//            public void subscribe(ObservableEmitter<List<UserEntity>> e) throws Exception {
 //                if (!e.isDisposed()) {
 //                    e.onNext(Utils.getUserListWhoLovesFootball());
 //                    e.onComplete();

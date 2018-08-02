@@ -23,6 +23,8 @@
 
         <activity android:name=".arch.ArchActivity" />
         <activity android:name=".dagger.DaggerDateActivity" />
+        <activity android:name=".arch.room.RoomActivity" />
+
         <activity android:name=".rx.RxActivity" />
         <activity android:name=".rx.RxOperatorExampleActivity" />
         <activity android:name=".rx.SimpleExampleActivity" />

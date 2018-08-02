@@ -5,7 +5,7 @@
         <item>Arch Sample</item>
         <item>Dagger Sample</item>
         <item>RxJava Sample</item>
-        <item>DaggerDate Sample</item>
+        <item>Arch Room Sample</item>
     </string-array>
 
     <string name="bt_rx_api">GitHub API Test</string>

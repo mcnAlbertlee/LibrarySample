@@ -22,6 +22,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
         ActivityBindingModule.class,
         ApplicationModule.class,
         AndroidSupportInjectionModule.class,
+        StorageModule.class,
         CoreModule.class,
         NetworkModule.class
 })
